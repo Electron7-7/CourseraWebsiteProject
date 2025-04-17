@@ -4,14 +4,46 @@ body
     color: black;
 }
 
+@font-face
+{
+    font-family: prettyNiceFont;
+    src: url();
+}
+
 .list.container
 {
     display: inline-block;
     width: 23%;
     vertical-align: top;
+    text-align: center;
+    padding: 10px;
+    margin: 15px;
+    background: rgba(80, 150, 225, 1);
+    font-family: ;
+}
+
+.list.item
+{
+    margin: 5px 0 10px 0;
+}
+
+.list.item.title
+{
+    font-size: 32pt;
+}
+
+.list.item.info
+{
+    text-align: left;
+}
+
+.list.item.info.bottom
+{
+    margin-bottom: 0;
 }
 
 img.list.item
 {
     width: 200px;
+    margin-bottom: 5px;
 }
