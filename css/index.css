@@ -6,8 +6,8 @@ body
 
 @font-face
 {
-    font-family: prettyNiceFont;
-    src: url();
+    font-family: 'prettyNiceFont';
+    src: url('https://github.com/Electron7-7/CourseraWebsiteProject/blob/trunk/fonts/RobotoFlex.ttf');
 }
 
 .list.container
@@ -19,7 +19,7 @@ body
     padding: 10px;
     margin: 15px;
     background: rgba(80, 150, 225, 1);
-    font-family: ;
+    font-family: prettyNiceFont;
 }
 
 .list.item
