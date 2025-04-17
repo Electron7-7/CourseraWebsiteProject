@@ -1,25 +1,87 @@
+@font-face
+{
+  font-family: "Roboto Flex", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "wdth" 100,
+    "GRAD" 0,
+    "XOPQ" 96,
+    "XTRA" 468,
+    "YOPQ" 79,
+    "YTAS" 750,
+    "YTDE" -203,
+    "YTFI" 738,
+    "YTLC" 514,
+    "YTUC" 712;
+}
+
 body
 {
     background-color: #d7d7d7;
     color: black;
 }
 
-@font-face
+div.list.section
 {
-    font-family: 'prettyNiceFont';
-    src: url('https://github.com/Electron7-7/CourseraWebsiteProject/blob/trunk/fonts/RobotoFlex.ttf');
+    background: rgb(100, 120, 130);
+    border-radius: 0 0 50px 50px;
+    align-items: center;
+    display: inline-flex;
+    margin-top: 0;
+    width: 100%;
 }
 
-.list.container
+span.list.container
 {
     display: inline-block;
     width: 23%;
+    height: 500px;
     vertical-align: top;
-    text-align: center;
-    padding: 10px;
+    padding: 20px;
     margin: 15px;
-    background: rgba(80, 150, 225, 1);
-    font-family: prettyNiceFont;
+    background: rgb(238, 230, 245);
+    border-radius: 25px;
+}
+
+div.list.info
+{
+    background: rgba(200, 230, 255, 0.5);
+    padding: 20px;
+    border-radius: 20px;
+    height: 250px;
+}
+
+div.list.section#Skills
+{
+    flex-direction: row;
+}
+
+#Skills span.list.container
+{
+    width: fill;
+    height: fit-content;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+#Skills div.list.info
+{
+    height: auto;
+}
+
+.list.section.title
+{
+    font-family: "Roboto Flex";
+    font-size: 36pt;
+    border-radius: 50px 50px 0 0;
+    background: rgb(140, 160, 170);
+    color: rgb(10, 50, 10);
+    margin-bottom: 0;
+    padding-left: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 .list.item
@@ -29,12 +91,40 @@ body
 
 .list.item.title
 {
+    font-family: "Roboto Flex";
     font-size: 32pt;
+    font-weight: 500;
+    display: inline;
+    vertical-align: 0.3em;
+}
+
+a
+{
+    color: rgb(150, 10, 160);
+}
+
+a:visited
+{
+    color: rgb(100, 0, 110);
+}
+
+a:hover
+{
+    color: rgb(190, 50, 200);
 }
 
 .list.item.info
 {
     text-align: left;
+    font-family: "Roboto Flex";
+    font-size: 12pt;
+    font-weight: 400;
+}
+
+.list.item.info > b
+{
+    font-size: 14pt;
+    font-weight: 600;
 }
 
 .list.item.info.bottom
@@ -46,4 +136,17 @@ img.list.item
 {
     width: 200px;
     margin-bottom: 5px;
+    border-radius: 10px;
+    transition: all 1s ease;
+}
+
+img.list.item:hover
+{
+    width: 220px;
+}
+
+.list.item.image,
+.list.item.title
+{
+    text-align: left;
 }
