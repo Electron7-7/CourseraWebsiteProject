@@ -10,3 +10,8 @@ body
     width: 23%;
     vertical-align: top;
 }
+
+img.list.item
+{
+    width: 200px;
+}
