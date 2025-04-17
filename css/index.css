@@ -1,0 +1,12 @@
+body
+{
+    background-color: #d7d7d7;
+    color: black;
+}
+
+.list.container
+{
+    display: inline-block;
+    width: 23%;
+    vertical-align: top;
+}
